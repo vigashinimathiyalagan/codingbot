@@ -1,2 +1,0 @@
-# codingbot
-new repository sayur
