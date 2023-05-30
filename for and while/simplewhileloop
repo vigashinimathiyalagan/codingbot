@@ -1,1 +1,34 @@
+######## Problem 2 ###############
+# Computer will guess a random number. 
+# user has to guess that number. for each guess, print 'High' or 'Low'
+# eg - computer number - 189
+# user guess 56 - print low
+# user guess 678 - print high
+# Get user input and print 'high' or 'low' until the user guesses the number correctly 
+import random
 
+computerNo = random.randint(3, 9)
+
+attempt = 0
+while True:
+    userNo = int(input("Enter your guess: "))
+    if userNo > computerNo:
+        print("High")
+    elif userNo < computerNo:
+        print("Low")
+    else:
+        print("Congratulations! You guessed the correct number.")
+        break
+
+    attempt += 1
+
+print("User guessed the number in", attempt, "attempts")
+output:
+Enter your guess: 9
+High
+Enter your guess: 0
+Low
+Enter your guess: 9
+High
+Enter your guess: 5
+Congratulations! You guessed the correct number.
