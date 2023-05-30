@@ -1,0 +1,24 @@
+noOfCake = 0
+noOfChoc = 0
+one_choc=200
+one_cake=150
+# Get budget from the user
+budget = float(input("Enter your budget: "))
+
+while budget >= 150:
+    if budget >= 200:
+        # Buy a chocolate
+        noOfChoc += 1
+        budget -= 200
+    
+    # Buy a cake
+    noOfCake += 1
+    budget -= 150
+
+print("Number of cakes:", noOfCake)
+print("Number of chocolates:", noOfChoc)
+
+output:
+Enter your budget: 500
+Number of cakes: 2
+Number of chocolates: 1
