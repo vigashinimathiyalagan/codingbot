@@ -1,1 +1,31 @@
+##buy choc and cake
+# one choc is Rs 200
+# one cake is 150
+#get budget from user. Also get the total number of choc and cakes that the shop has
+#Hint - you can buy choc/Cake only if shop has it.
+choc_price = 200
+cake_price = 150
 
+budget = float(input("Enter your budget: "))
+total_chocolates = int(input("Enter the total number of chocolates available: "))
+total_cakes = int(input("Enter the total number of cakes available: "))
+
+max_chocolates = min(total_chocolates, int(budget / choc_price))
+max_cakes = min(total_cakes, int(budget / cake_price))
+
+total_cost = (max_chocolates * choc_price) + (max_cakes * cake_price)
+
+print("You can buy a maximum of", max_chocolates, "chocolates and", max_cakes, "cakes.")
+print("The total cost would be Rs", total_cost)
+output:
+Enter your budget: 500
+Enter the total number of chocolates available: 4
+Enter the total number of cakes available: 5
+You can buy a maximum of 2 chocolates and 3 cakes.
+The total cost would be Rs 850
+
+Enter your budget: 1000
+Enter the total number of chocolates available: 7
+Enter the total number of cakes available: 9
+You can buy a maximum of 5 chocolates and 6 cakes.
+The total cost would be Rs 1900
