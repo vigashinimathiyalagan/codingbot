@@ -13,3 +13,8 @@ if i < len(inputString):
 
 print(newString)
 
+output:
+    Enter a string: python
+py th on
+Enter a string: execution
+ex ec ut io n
